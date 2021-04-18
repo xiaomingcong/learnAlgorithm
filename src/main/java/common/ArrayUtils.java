@@ -23,9 +23,10 @@ public class ArrayUtils {
         for(int i=0; i<arr.length; i++){
             builder.append(arr[i] + ",");
             System.out.print(arr[i] + ",");
-            if(i>0&&i%10==0)
+            if(i>0&&(i + 1)%10==0)
                 System.out.println();
         }
+        System.out.println();
         String s = builder.substring(0,builder.length()-1).toString();
 
         return s;
@@ -101,5 +102,49 @@ public class ArrayUtils {
             b[i] = a[i];
         return b;
     }
+
+    /**
+       * @Description: 给定一个数组，判断是否已排序,返回一个整数
+        * -2:错误输入；
+        * -1：逆序；
+        * 0：全等；
+        * 1：正序;
+        * 2：无序
+       * @Param  a
+       * @return int
+       * @Autohr xiaomingcong
+       * @date 2021/3/19 12:26 上午
+       * Version 1.0
+    */
+    public static int isSort(int[] a){
+        int leastStatus = 0;//上一轮比较状态
+        if(a == null) return -2;
+        if(a.length == 1) return 1;
+        if(a.length == 2) return a[0]==a[1] ? 0 : (a[0] > a[1] ? -1 : 1);
+        leastStatus = a[0]==a[1] ? 0 : (a[0] > a[1] ? -1 : 1);
+        for(int i = 2; i < a.length; i++){
+            if(a[i-1] < a[i]){
+                if(leastStatus == 0){
+                    leastStatus = 1;
+                }else if(leastStatus == 1){
+                    continue;
+                }else{
+                    return 0;
+                }
+            }else if(a[i-1] > a[i]){
+                if(leastStatus == 0){
+                    leastStatus = -1;
+                }else if(leastStatus == -1){
+                    continue;
+                }else{
+                    return 0;
+                }
+            }else{
+                continue;
+            }
+        }
+        return leastStatus;
+    }
+
 
 }

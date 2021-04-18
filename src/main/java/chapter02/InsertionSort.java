@@ -1,4 +1,4 @@
-package chapter01;
+package chapter02;
 
 import common.ArrayUtils;
 
@@ -47,8 +47,10 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] a = {56,3,7,8,9,1,67,2,5};
-        System.out.println(ArrayUtils.printFormat(a));
-        System.out.println(ArrayUtils.printFormat(InsertionSort.execute(a)));
+        ArrayUtils.printFormat(a);
+        System.out.println();
+        ArrayUtils.printFormat(InsertionSort.execute(a));
+        System.out.println();
 
 
     }
