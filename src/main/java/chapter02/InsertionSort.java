@@ -50,7 +50,7 @@ public class InsertionSort {
         ArrayUtils.printFormat(a);
         System.out.println();
         ArrayUtils.printFormat(InsertionSort.execute(a));
-        System.out.println();
+        System.out.println(ClassLoader.getSystemClassLoader());
 
 
     }

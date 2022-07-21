@@ -54,7 +54,7 @@ public class ArrayUtils {
        * @Param  max 数组不超过的最大值
        * @Pamam  distinct 数组元素是否唯一 ,默认不唯一
        * @return int[]
-       * @Autohr xiaomingcong
+       * @Author xiaomingcong
        * @date 2020/12/7 10:02 下午
        * Version 1.0
     */
@@ -146,5 +146,24 @@ public class ArrayUtils {
         return leastStatus;
     }
 
+    /**
+       * @Description: 数组扩容
+       * @Param  a
+       * @return int[]
+       * @Autohr xiaomingcong
+       * @date 2021/5/1 11:22 下午
+       * Version 1.0
+    */
+    public static int[] expansion(int[] a){
+        int nl = NumberUtils.getLeastAboveNumInPow2(a.length);
+        if(nl == a.length){
+            nl = nl * 2;
+        }
+        int[] b = new int[nl];
+        for(int i = 0; i < a.length; i++){
+            b[i] = a[i];
+        }
+        return b;
+    }
 
 }
