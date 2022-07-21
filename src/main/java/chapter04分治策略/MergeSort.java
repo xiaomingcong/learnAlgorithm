@@ -24,7 +24,7 @@ public class MergeSort {
     }
 
 
-    public int[] solution(int[] a){
+    public static int[] solution(int[] a){
         //System.out.println(a.length);
         if(a.length > 1){
             return merge(solution(Arrays.copyOfRange(a,0,(a.length + 1)/ 2 )),
@@ -34,7 +34,7 @@ public class MergeSort {
 
     }
 
-    public int[] merge(int[] a, int[] b){
+    public static int[] merge(int[] a, int[] b){
         int[] c = new int[a.length + b.length];
         int al = a.length;
         int bl = b.length;
