@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T08:18:37.648Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Mcr7b4JtMnd68bYkXj2H" version="20.2.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-08-26T09:03:42.815Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="PgnbCqEVznX8exzmOiCV" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -299,6 +299,79 @@
         </mxCell>
         <mxCell id="I7VolOuyJf7Wvv-ecBtf-80" value="p=e" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="120" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="euXci-Q9xNUGhIbNTdfW" name="resize扩容">
+    <mxGraphModel dx="2013" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-1" target="-2UY0wz9JWXdvg5dUbAX-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-1" value="start" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="390" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-2" target="-2UY0wz9JWXdvg5dUbAX-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-2" value="记录旧table为oldTab&lt;br&gt;记录旧表的长度为oldCab&lt;br&gt;记录旧的阀值为oldThr&lt;br&gt;初始化新表长度newCap，新阀值newThr" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="330" y="220" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-3" target="-2UY0wz9JWXdvg5dUbAX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-12" value="不是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="-2UY0wz9JWXdvg5dUbAX-11">
+          <mxGeometry x="-0.28" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-3" value="不是第一次初始化&lt;br&gt;oldTab &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-6" target="-2UY0wz9JWXdvg5dUbAX-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-14" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="-2UY0wz9JWXdvg5dUbAX-13">
+          <mxGeometry x="0.3" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-6" target="-2UY0wz9JWXdvg5dUbAX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-16" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="-2UY0wz9JWXdvg5dUbAX-15">
+          <mxGeometry x="-0.0545" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-6" value="旧表长度大于等于限制的最大表长度" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-9" value="表的阀值设置为可取的最大值MAXIMUN_CAPACITY，返回旧表oldTab" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="375" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-10" target="-2UY0wz9JWXdvg5dUbAX-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-10" value="新表长度等于旧表长度的2倍&lt;br&gt;newCap = oldCap &amp;lt;&amp;lt; 1" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="130" y="580" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.552;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-18" target="-2UY0wz9JWXdvg5dUbAX-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-22" value="符合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="-2UY0wz9JWXdvg5dUbAX-21">
+          <mxGeometry x="-0.0245" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-18" value="新表长度小于最大表长度且旧表长度大于等于默认初始长度" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="140" y="720" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-19" value="新阀值为旧阀值的两倍&lt;br&gt;newThr = oldThr &amp;lt;&amp;lt; 1" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="130" y="930" width="145" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
