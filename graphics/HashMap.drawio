@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T09:34:31.733Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="J73E8TGeVfoT61wqRfv5" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-26T09:46:07.245Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="UE5D6gOucJQTFlp6MZGu" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -389,6 +389,14 @@
         <mxCell id="-2UY0wz9JWXdvg5dUbAX-18" value="新表长度小于最大表长度且旧表长度大于等于默认初始长度" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="140" y="720" width="140" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-19" target="YT8NjMzOfj5ycWAdWLNe-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="203" y="1130" />
+              <mxPoint x="450" y="1130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="-2UY0wz9JWXdvg5dUbAX-19" value="新阀值为旧阀值的两倍&lt;br&gt;newThr = oldThr &amp;lt;&amp;lt; 1" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="130" y="930" width="145" height="60" as="geometry" />
         </mxCell>
@@ -406,8 +414,19 @@
         <mxCell id="YT8NjMzOfj5ycWAdWLNe-2" value="如果new的时候有提供参数&lt;br&gt;oldThr &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="380" y="545" width="140" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="YT8NjMzOfj5ycWAdWLNe-3" value="使用提供的参数表阀值&lt;br&gt;newCap = oldThr" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-3" target="YT8NjMzOfj5ycWAdWLNe-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-3" value="使用提供的参数初始化表长度&lt;br&gt;newCap = oldThr" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="375" y="930" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-7" target="YT8NjMzOfj5ycWAdWLNe-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="675" y="1130" />
+              <mxPoint x="450" y="1130" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="YT8NjMzOfj5ycWAdWLNe-7" value="使用默认配置&lt;br&gt;newCap = 16&lt;br&gt;newThr = 16 * 0.75" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="580" y="930" width="190" height="60" as="geometry" />
@@ -420,6 +439,15 @@
             <mxPoint x="340" y="190" as="sourcePoint" />
             <mxPoint x="390" y="140" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-11" target="YT8NjMzOfj5ycWAdWLNe-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-11" value="使用带有参数的构造器&lt;br&gt;newThr == 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1250" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-15" value="newThr = newCap * loadFactor" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1480" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
