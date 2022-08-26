@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T09:46:07.245Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="UE5D6gOucJQTFlp6MZGu" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-26T09:51:41.901Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="OGlq8rKJnp_YhEjJK7Vj" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -443,11 +443,36 @@
         <mxCell id="YT8NjMzOfj5ycWAdWLNe-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-11" target="YT8NjMzOfj5ycWAdWLNe-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-19" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="YT8NjMzOfj5ycWAdWLNe-16">
+          <mxGeometry x="-0.04" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-11" target="YT8NjMzOfj5ycWAdWLNe-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="1315" />
+              <mxPoint x="270" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-22" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="YT8NjMzOfj5ycWAdWLNe-21">
+          <mxGeometry x="-0.0609" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="YT8NjMzOfj5ycWAdWLNe-11" value="使用带有参数的构造器&lt;br&gt;newThr == 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="380" y="1250" width="140" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-15" target="YT8NjMzOfj5ycWAdWLNe-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="YT8NjMzOfj5ycWAdWLNe-15" value="newThr = newCap * loadFactor" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="390" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-17" value="设置阀值&lt;br&gt;threShold = newTrr" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1630" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
