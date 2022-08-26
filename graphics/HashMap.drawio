@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T10:07:58.385Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="7VICZFoj3OB831I6QqnW" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-26T10:10:57.949Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="LeK7OQ5NVNcKd9cTbnlZ" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -315,6 +315,15 @@
         </mxCell>
         <mxCell id="I7VolOuyJf7Wvv-ecBtf-80" value="p=e" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="120" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qneDDgAVLuNBhGyeFWzu-1" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="I7VolOuyJf7Wvv-ecBtf-10" target="qneDDgAVLuNBhGyeFWzu-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="550" as="sourcePoint" />
+            <mxPoint x="900" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qneDDgAVLuNBhGyeFWzu-2" value="使用迭代器迭代的时候会判断这个modCounnt，如果发现与创建迭代器时赋的值不相等，就代表hashmap表有修改，会报错" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="930" y="570" width="440" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
