@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T09:08:03.311Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fF7fWiFwQUq8Lyin_7Bb" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-26T09:29:21.344Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="9s3H4sdAMIzroSaWS2-o" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -344,7 +344,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-2UY0wz9JWXdvg5dUbAX-3" value="不是第一次初始化&lt;br&gt;oldTab &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-4" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-3" target="YT8NjMzOfj5ycWAdWLNe-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-2UY0wz9JWXdvg5dUbAX-3" value="不是第一次扩容&lt;br&gt;oldTab &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="380" y="340" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="-2UY0wz9JWXdvg5dUbAX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="-2UY0wz9JWXdvg5dUbAX-6" target="-2UY0wz9JWXdvg5dUbAX-9">
@@ -388,6 +391,26 @@
         </mxCell>
         <mxCell id="-2UY0wz9JWXdvg5dUbAX-19" value="新阀值为旧阀值的两倍&lt;br&gt;newThr = oldThr &amp;lt;&amp;lt; 1" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="130" y="930" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-2" target="YT8NjMzOfj5ycWAdWLNe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-6" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;fontFamily=Helvetica;fontColor=default;" vertex="1" connectable="0" parent="YT8NjMzOfj5ycWAdWLNe-5">
+          <mxGeometry x="-0.0667" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="YT8NjMzOfj5ycWAdWLNe-2" target="YT8NjMzOfj5ycWAdWLNe-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-2" value="如果new的时候有提供参数&lt;br&gt;oldThr &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="380" y="545" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-3" value="使用提供的参数表阀值&lt;br&gt;newCap = oldThr" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="375" y="930" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YT8NjMzOfj5ycWAdWLNe-7" value="使用默认配置&lt;br&gt;newCap = 16&lt;br&gt;newThr = 16 * 0.75" style="whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="580" y="930" width="190" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
