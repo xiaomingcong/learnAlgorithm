@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-28T04:50:40.006Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="3erFRFpDq1kcfAnbeuMz" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-28T04:51:15.337Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="w9d7yoIi3Dbnbl8G5kpQ" version="20.2.7" type="github" pages="3">
   <diagram id="oE2_1I7N5nSIbNqHSl13" name="UML">
     <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -13,7 +13,7 @@
         <mxCell id="H5zos54c4SpsF4I4KSYb-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="H5zos54c4SpsF4I4KSYb-1" vertex="1">
           <mxGeometry y="130" width="440" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="H5zos54c4SpsF4I4KSYb-4" value="+ put(K,V): V&#xa;+ get(Object): V " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="H5zos54c4SpsF4I4KSYb-1" vertex="1">
+        <mxCell id="H5zos54c4SpsF4I4KSYb-4" value="+ put(K,V): V&#xa;+ get(Object): V &#xa;+ resize(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="H5zos54c4SpsF4I4KSYb-1" vertex="1">
           <mxGeometry y="138" width="440" height="200" as="geometry" />
         </mxCell>
         <mxCell id="fHcyIPj02tVEFjKDAxiH-1" value="«interface»&lt;br&gt;&lt;b&gt;Map&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
