@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-29T05:14:37.040Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="VQOyk3aNjq6Qxc1n9FTA" version="20.2.7" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-29T05:15:45.933Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="FnPqAW-bseoBAKxlWMsb" version="20.2.7" type="github" pages="3">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -157,7 +157,7 @@
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="i_WLHFgb04rwcssGX6vp-3" value="检查tab是否为空" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="i_WLHFgb04rwcssGX6vp-3" value="检查tab是否为空，&lt;br&gt;是否还没初始化" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="380" y="290" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="i_WLHFgb04rwcssGX6vp-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="i_WLHFgb04rwcssGX6vp-6" target="i_WLHFgb04rwcssGX6vp-7">
