@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-29T03:00:44.048Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="vaCOwNrvdC-KU96LL9yD" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-29T03:56:48.212Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="xohQ1wAN5j5QEJZnj8ym" version="20.2.7" type="github" pages="3">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,6 +87,46 @@
             <mxPoint x="820" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="_65CIZnCFHtu80Ehmc7j-1" value="ConcurrentHashMap中大部分属性都是volatile" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="505" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_65CIZnCFHtu80Ehmc7j-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PguQYnZTo6dj_5RU9vS7-1" target="_65CIZnCFHtu80Ehmc7j-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="580" as="sourcePoint" />
+            <mxPoint x="760" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OEulCBpZv285a_LUhkDX" name="putVal">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dOHxIbNJJwz0cMyqUG18-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="dOHxIbNJJwz0cMyqUG18-1" target="dOHxIbNJJwz0cMyqUG18-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dOHxIbNJJwz0cMyqUG18-1" value="start" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dOHxIbNJJwz0cMyqUG18-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="dOHxIbNJJwz0cMyqUG18-2" target="dOHxIbNJJwz0cMyqUG18-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dOHxIbNJJwz0cMyqUG18-2" value="参数合法性检查&lt;br&gt;key，value不能为null" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dOHxIbNJJwz0cMyqUG18-4" value="计算出hash值，使用高位掩码提升效率" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="v3u47B8ZrRebYIyui9Jv" name="initTable">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
