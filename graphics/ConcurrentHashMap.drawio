@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-29T09:46:36.217Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="1JMFDsTxc0feAeIq7lsm" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-30T08:59:27.355Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="BCbU6yaRbIdZ8tdQXKGF" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -87,8 +87,8 @@
             <mxPoint x="820" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_65CIZnCFHtu80Ehmc7j-1" value="ConcurrentHashMap中大部分属性都是volatile" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="505" width="210" height="80" as="geometry" />
+        <mxCell id="_65CIZnCFHtu80Ehmc7j-1" value="ConcurrentHashMap中大部分属性都是volatile。&lt;br&gt;&lt;div&gt;&lt;div&gt;sizeCtl是一个用于同步多个线程的共享变量，如果它的当前值为负数，则说明table正在被某个线程初始化或者扩容，所以，如果某个线程想要初始化table或者对table扩容，需要去竞争sizeCtl这个共享变量，获得变量的线程才有许可去进行接下来的操作，没能获得的线程将会一直自旋来尝试获得这个共享变量&lt;/div&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;" vertex="1" parent="1">
+          <mxGeometry y="440" width="440" height="145" as="geometry" />
         </mxCell>
         <mxCell id="_65CIZnCFHtu80Ehmc7j-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PguQYnZTo6dj_5RU9vS7-1" target="_65CIZnCFHtu80Ehmc7j-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
