@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-30T09:29:58.046Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="bt93JY9G0W8__loXRY8M" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-30T09:30:08.065Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="XXalMfrHvvxooHznkjBH" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,7 +88,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_65CIZnCFHtu80Ehmc7j-1" value="ConcurrentHashMap中大部分属性都是volatile。&lt;br&gt;&lt;div&gt;&lt;div&gt;&lt;font color=&quot;#ff00ff&quot;&gt;sizeCtl：&lt;/font&gt;是一个用于同步多个线程的共享变量，如果它的当前值为负数，则说明table正在被某个线程初始化或者扩容，所以，如果某个线程想要初始化table或者对table扩容，需要去竞争sizeCtl这个共享变量，获得变量的线程才有许可去进行接下来的操作，没能获得的线程将会一直自旋来尝试获得这个共享变量&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ff00ff&quot;&gt;transferIndex&lt;/font&gt;：协调多个线程多table数组中的node进行迁移，每个线程最少迁移16个node，当transferIndex小于等于0是，不再需要协助扩容。&lt;/div&gt;&lt;div&gt;ForwardingNode节点：代表该node已经迁移完成，可以查找，如果是插入的话就协助扩容。&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=left;size=0.2;" vertex="1" parent="1">
-          <mxGeometry y="440" width="440" height="250" as="geometry" />
+          <mxGeometry y="460" width="440" height="230" as="geometry" />
         </mxCell>
         <mxCell id="_65CIZnCFHtu80Ehmc7j-2" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.075;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="PguQYnZTo6dj_5RU9vS7-1" target="_65CIZnCFHtu80Ehmc7j-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
