@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-31T03:39:55.702Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aXJdKyIvEfcpqmEjvlTR" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-31T03:42:37.523Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aoRsv87ym0CF8RdcADQO" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -914,7 +914,7 @@
         <mxCell id="zyRSz5ip37z3qWV7Lry0-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="zyRSz5ip37z3qWV7Lry0-11" target="zyRSz5ip37z3qWV7Lry0-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zyRSz5ip37z3qWV7Lry0-17" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="zyRSz5ip37z3qWV7Lry0-16" vertex="1" connectable="0">
+        <mxCell id="zyRSz5ip37z3qWV7Lry0-17" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="zyRSz5ip37z3qWV7Lry0-16" vertex="1" connectable="0">
           <mxGeometry x="-0.4654" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -922,7 +922,7 @@
         <mxCell id="idDRBpbRZt82TRtOF2QD-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=-0.063;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#0000FF;" edge="1" parent="1" source="zyRSz5ip37z3qWV7Lry0-11" target="zyRSz5ip37z3qWV7Lry0-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="idDRBpbRZt82TRtOF2QD-4" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0000FF;" vertex="1" connectable="0" parent="idDRBpbRZt82TRtOF2QD-2">
+        <mxCell id="idDRBpbRZt82TRtOF2QD-4" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0000FF;" vertex="1" connectable="0" parent="idDRBpbRZt82TRtOF2QD-2">
           <mxGeometry x="-0.1692" y="3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -962,7 +962,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="LJGaWwoeP-A32JLu5xFg-1" value="添加到计数中，如果表太小并且尚未调整大小，则启动传输。 如果已经调整大小，则在工作可用时帮助执行传输。 转移后重新检查占用情况，以查看是否已经需要再次调整大小，因为调整大小滞后于添加。" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="LJGaWwoeP-A32JLu5xFg-1" value="添加到计数中，如果表太小并且尚未调整大小，则启动传输。 如果已经调整大小，则在工作可用时帮助执行传输。 转移后重新检查占用情况，以查看是否已经需要再次调整大小，因为调整大小滞后于添加。" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="210" y="30" width="380" height="80" as="geometry" />
         </mxCell>
       </root>
