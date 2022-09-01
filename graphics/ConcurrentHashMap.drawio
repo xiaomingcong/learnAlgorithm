@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-01T02:46:58.308Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="uklN8sTUvFHBASIxYO7e" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-01T03:03:01.009Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="GkqxwYgarV_cqw0-k6se" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1028,7 +1028,7 @@
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-18">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="840" y="830" />
+              <mxPoint x="650" y="740" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1037,17 +1037,28 @@
             <mxPoint x="1040" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-12" value="是否需要扩容" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="770" y="610" width="140" height="130" as="geometry" />
         </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-18" target="z-cnOxnjKGFMkRXJYqfk-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-18" value="设置sizeCtl，&lt;br&gt;开始扩容" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="590" y="890" width="120" height="60" as="geometry" />
+          <mxGeometry x="590" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-19" target="z-cnOxnjKGFMkRXJYqfk-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-19" value="sizeCtl + 1，&lt;br&gt;协助扩容" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="980" y="900" width="120" height="60" as="geometry" />
+          <mxGeometry x="980" y="870" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-22" value="end" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="770" y="1060" width="120" height="60" as="geometry" />
+          <mxGeometry x="780" y="1010" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
