@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-31T03:42:37.523Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="aoRsv87ym0CF8RdcADQO" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-01T02:46:58.308Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="uklN8sTUvFHBASIxYO7e" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -962,8 +962,92 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="LJGaWwoeP-A32JLu5xFg-1" value="添加到计数中，如果表太小并且尚未调整大小，则启动传输。 如果已经调整大小，则在工作可用时帮助执行传输。 转移后重新检查占用情况，以查看是否已经需要再次调整大小，因为调整大小滞后于添加。" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="210" y="30" width="380" height="80" as="geometry" />
+        <mxCell id="LJGaWwoeP-A32JLu5xFg-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;baseCount是记录表中元素个数的字段。&lt;/span&gt;&lt;/div&gt;counterCells是counterCell类型数组，在对bashCount修改时发生冲突，就会通过累加counterCells中的值来得到表中元素个数" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;align=left;" parent="1" vertex="1">
+          <mxGeometry x="260" y="130" width="380" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-1" target="z-cnOxnjKGFMkRXJYqfk-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-1" value="start" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="780" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-3" target="z-cnOxnjKGFMkRXJYqfk-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-8" value="false" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-7">
+          <mxGeometry y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-3" target="z-cnOxnjKGFMkRXJYqfk-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-14" value="true" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-11">
+          <mxGeometry x="-0.4256" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-3" value="connterCells != null" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="770" y="190" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-4" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=1;entryY=0.381;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-3" target="LJGaWwoeP-A32JLu5xFg-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="360" as="sourcePoint" />
+            <mxPoint x="830" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-6" target="z-cnOxnjKGFMkRXJYqfk-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-13" value="失败" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-10">
+          <mxGeometry x="-0.15" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-6" target="z-cnOxnjKGFMkRXJYqfk-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-16" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-15">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-6" value="cas修改baseCount的值" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="770" y="390" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-9" target="z-cnOxnjKGFMkRXJYqfk-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-9" value="通过分片的方式，累加counterCells中的值得到总元素个数" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="490" y="425" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1040" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-12" value="是否需要扩容" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="770" y="610" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-18" value="设置sizeCtl，&lt;br&gt;开始扩容" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="590" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-19" value="sizeCtl + 1，&lt;br&gt;协助扩容" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="980" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-22" value="end" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
