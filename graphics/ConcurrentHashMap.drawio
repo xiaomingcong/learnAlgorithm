@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-01T03:03:01.009Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="GkqxwYgarV_cqw0-k6se" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-01T03:11:05.366Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="7I_cVpBcr7ydEwAB5EfZ" version="20.2.7" type="github" pages="4">
   <diagram id="nTWPoJEnFSnotM4Kedfl" name="classDiagram">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1032,14 +1032,29 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-26" value="需要，且第一次扩容" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-20">
+          <mxGeometry x="0.4875" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-19">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1040" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-27" value="需要，但已经在扩容" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-21">
+          <mxGeometry x="0.4462" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="z-cnOxnjKGFMkRXJYqfk-12" target="z-cnOxnjKGFMkRXJYqfk-22">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="840" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z-cnOxnjKGFMkRXJYqfk-28" value="不需要" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="z-cnOxnjKGFMkRXJYqfk-23">
+          <mxGeometry x="-0.1259" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="z-cnOxnjKGFMkRXJYqfk-12" value="是否需要扩容" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
