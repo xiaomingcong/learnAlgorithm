@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-02T07:04:43.424Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="u40V6PVBoYduFHPPGaas" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-02T07:46:54.930Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="JWEv1n0R_tYdE4ISGmJ1" version="20.2.7" type="github" pages="4">
   <diagram id="wMf3YCY0R5SblOMllHFq" name="UML">
     <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -231,39 +231,90 @@
         <mxCell id="vEtstXqShwHBeF3AB5NA-35" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-25" target="vEtstXqShwHBeF3AB5NA-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-25" target="vEtstXqShwHBeF3AB5NA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-37" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-36">
+          <mxGeometry x="-0.449" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vEtstXqShwHBeF3AB5NA-25" value="尝试获取锁" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="-330" y="1150" width="140" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-28" value="" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-80" y="1185" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29">
+        <mxCell id="vEtstXqShwHBeF3AB5NA-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29" target="vEtstXqShwHBeF3AB5NA-38">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-430" y="1600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-630" y="1415" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-31" value="就绪，等待资源" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-30">
+        <mxCell id="vEtstXqShwHBeF3AB5NA-31" value="就绪，等待资源&lt;br&gt;SIGNAL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-30">
           <mxGeometry x="0.0807" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29">
+        <mxCell id="vEtstXqShwHBeF3AB5NA-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29" target="vEtstXqShwHBeF3AB5NA-39">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-260" y="1640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-33" value="已放弃获取资源" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-32">
+        <mxCell id="vEtstXqShwHBeF3AB5NA-33" value="已放弃获取资源&lt;br&gt;CANCELLED" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-32">
           <mxGeometry x="-0.2375" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vEtstXqShwHBeF3AB5NA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29">
+        <mxCell id="vEtstXqShwHBeF3AB5NA-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29" target="vEtstXqShwHBeF3AB5NA-41">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-40" y="1610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-46" value="&lt;span style=&quot;font-size: 12px; text-align: left; background-color: rgb(248, 249, 250);&quot;&gt;CONDITION or&lt;br&gt;&amp;nbsp;PROPAGATE&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="vEtstXqShwHBeF3AB5NA-34">
+          <mxGeometry x="0.1229" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vEtstXqShwHBeF3AB5NA-29" value="判断前驱节点的状态" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="-330" y="1350" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-38" target="vEtstXqShwHBeF3AB5NA-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-38" value="阻塞当前线程，设置中断状态" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="1385" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.871;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-39" target="vEtstXqShwHBeF3AB5NA-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="1440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-208" y="1590" />
+              <mxPoint x="-208" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-39" value="找到上一个没有取消获取资源的节点，设置为当前节点的前驱节点" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;entryX=0.893;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-41" target="vEtstXqShwHBeF3AB5NA-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="1440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-80" y="1431" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-41" value="设置前驱节点状态为SIGNAL" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-42" value="SIGNAL：已就绪等待资源&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;CANCELLED：线程已取消获取资源&lt;/span&gt;&lt;/div&gt;CONDITION：等待唤醒&lt;br&gt;PROPAGATE" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="1250" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vEtstXqShwHBeF3AB5NA-43" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.857;exitY=0.308;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vEtstXqShwHBeF3AB5NA-29" target="vEtstXqShwHBeF3AB5NA-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-30" y="1690" as="sourcePoint" />
+            <mxPoint x="20" y="1640" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
