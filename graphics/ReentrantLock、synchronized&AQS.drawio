@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-01T08:00:01.611Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="kM269O7QmAB2Eg-QoG0K" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-02T02:26:00.939Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="XcBzrBadqFbrDJheH4Wv" version="20.2.7" type="github" pages="4">
   <diagram id="wMf3YCY0R5SblOMllHFq" name="UML">
     <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -85,6 +85,90 @@
             <mxPoint x="870" y="830" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LkAHIDFFZeVLwlDEEHP2" name="lock">
+    <mxGraphModel dx="2013" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-4" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" target="5BJyOPEvw7wC_g8cWCSK-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="910" as="sourcePoint" />
+            <mxPoint x="174.5" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-5" value="ReentrantLock" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-6" value="NonfairSync" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="60" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-7" value="AbstractQueuedSynchronizer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-8" value="lock" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" target="5BJyOPEvw7wC_g8cWCSK-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="209.5" as="sourcePoint" />
+            <mxPoint x="260" y="209.5" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5BJyOPEvw7wC_g8cWCSK-9" value="lock" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="350" y="260" as="sourcePoint" />
+            <mxPoint x="519.5" y="260" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CcKMJzIiWHoYc19g9mOV-1" target="CcKMJzIiWHoYc19g9mOV-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-490" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-1" value="start" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-2" value="以非公平锁为例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="55" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CcKMJzIiWHoYc19g9mOV-5" target="CcKMJzIiWHoYc19g9mOV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-8" value="成功" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CcKMJzIiWHoYc19g9mOV-7">
+          <mxGeometry y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-5" value="cas设置state&lt;br&gt;0 -&amp;gt; 1" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="180" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-6" value="把锁持有者设置为当前线程" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="215" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CcKMJzIiWHoYc19g9mOV-9" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="215" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t_T2b2KaQGU2ihi8_IBI" name="AbstractQueuedSynchronizer">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="psnwYlz7nTenwIcom3Wk" name="第 4 页">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
