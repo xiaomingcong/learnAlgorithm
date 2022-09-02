@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-02T08:14:06.528Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="pIGe4jwdxd0qThc2r_Zh" version="20.2.7" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-09-02T10:09:50.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="-JkLT4eNvAwMYclmJsLT" version="20.2.7" type="github" pages="5">
   <diagram id="wMf3YCY0R5SblOMllHFq" name="UML">
     <mxGraphModel dx="2062" dy="1122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -360,14 +360,35 @@
         <mxCell id="dPK34BquxRaG-UTX9CmL-6" value="当前线程是否已经完释放锁&lt;br&gt;state == 0" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="320" y="580" width="140" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="dPK34BquxRaG-UTX9CmL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="dPK34BquxRaG-UTX9CmL-7" target="dPK34BquxRaG-UTX9CmL-8">
+        <mxCell id="dPK34BquxRaG-UTX9CmL-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="dPK34BquxRaG-UTX9CmL-7" target="dPK34BquxRaG-UTX9CmL-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dPK34BquxRaG-UTX9CmL-7" value="取消当前线程为锁的持有者" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="330" y="810" width="120" height="60" as="geometry" />
+          <mxGeometry x="330" y="770" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dPK34BquxRaG-UTX9CmL-8" value="end" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="80" y="615" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="dPK34BquxRaG-UTX9CmL-17" target="dPK34BquxRaG-UTX9CmL-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-17" value="获取等待队列的头结点head" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="dPK34BquxRaG-UTX9CmL-18" target="dPK34BquxRaG-UTX9CmL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-18" value="往后找到第一个非CANCELLED状态的节点，并唤醒" style="whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-22" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dPK34BquxRaG-UTX9CmL-18" target="dPK34BquxRaG-UTX9CmL-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="1150" as="sourcePoint" />
+            <mxPoint x="570" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dPK34BquxRaG-UTX9CmL-24" value="LockSupport.unpark(s.thread)" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="570" y="950" width="200" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
