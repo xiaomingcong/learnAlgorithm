@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-12T11:50:37.803Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ysXyhKHMOq3L3pqCXZxw" version="20.3.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-15T10:51:16.005Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="JqHaqEWLUd2wZn2r8YPm" version="20.2.7" type="github" pages="4">
   <diagram id="wMf3YCY0R5SblOMllHFq" name="UML">
-    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -403,15 +403,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="r6fSkEH4f68ZHQfrFJqB" name="synchronized">
-    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="81c6ErLLMhzepzBZF4nn-1" value="synchronized是java中解决并发的一种常用方法，可以把任何一个非null对象作为锁，&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;在HotSpot JVM实现中，&lt;/span&gt;&lt;strong style=&quot;margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;margin: 0px; padding: 0px; color: rgb(255, 0, 0);&quot;&gt;锁有个专门的名字：对象监视器（Object Monitor）&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;。&lt;/span&gt;&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;Synchronized用的锁就是存在Java对象头里的&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="90" y="40" width="620" height="400" as="geometry" />
-        </mxCell>
-        <mxCell id="81c6ErLLMhzepzBZF4nn-2" value="synchronize由JVM实现，会在执行代码前后添加monitorEnter和monitorExit，&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;PingFang SC&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 14px; text-align: start; background-color: rgb(255, 255, 255);&quot;&gt;任何一个对象都有一个Monitor与之关联，当且一个Monitor被持有后，它将处于锁定状态。&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="660" width="600" height="240" as="geometry" />
+        <mxCell id="81c6ErLLMhzepzBZF4nn-1" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;synchronized是由java虚拟机实现的，在字节码层面是在执行的代码前后添加monitorenter喝moniterexit命令来实现的。Java中线程的线程通讯是通过共享内存的，而jmm里面只有堆和方法区是线程共享的，synchronized中的锁就是利用堆中的对象来完成的。Java对象由对象头，对象体和填充字段组成。而对象头又由mark world，类型信息句柄组成，如果是数组类型还要增加一位来存储数组长度。synchronized的锁就是存储在mark world里面。通过复用该存储空间，可以表示无锁，偏向锁，轻量级锁和重量级锁四个状态。在无锁状态下是存储对象的hashcode，分代年龄信息。在线程进入synchronized代码块前，首先检查锁标志位，如果是可偏向的，检查是否已偏向当前线程，如果是的话，执行同步代码，否则cas竞争锁，成功则将mark world中Thread ID记录为当前线程id，并在栈桢Lock Record中存储当前线程ID。竞争失败：说明有竞争，等到达safepoint时会暂停持有偏向锁的线程，检查持有锁的线程是否还存活，如果已经处于不活跃状态，则将该锁偏向锁当前线程。否则升级为轻量级锁，由原来的线程持有锁。当前竞争线程进入自旋。轻量级锁的竞争：构造一个无锁状态的marl world设置到lock record里面，cas尝试将mark world中的记录指向lock rocord，成功：获取锁，失败则自旋。重量级锁：synchronized重量级锁是通过对象内部的monitor来实现的，每个对象都有一个与之关联的monitor，竞争重量级锁的时候会尝试将monitor对象里面的owner属性设置为当前线程，成功则将mark world中记录monitor的指针，否则阻塞。&lt;/font&gt;" style="whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="90" y="40" width="860" height="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
