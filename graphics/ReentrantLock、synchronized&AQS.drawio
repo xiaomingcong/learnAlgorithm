@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-16T07:39:40.197Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="h0ayat6M-8fFAkLsvrI9" version="20.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-09-16T08:07:59.771Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="XBXZazlMUaRaCsXsxQ8m" version="20.3.0" type="github" pages="4">
   <diagram id="wMf3YCY0R5SblOMllHFq" name="UML">
-    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -403,7 +403,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="r6fSkEH4f68ZHQfrFJqB" name="synchronized">
-    <mxGraphModel dx="1186" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2062" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -461,16 +461,19 @@
         <mxCell id="95CVfnCXo2DmVGU5_pwv-12" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="95CVfnCXo2DmVGU5_pwv-8" target="95CVfnCXo2DmVGU5_pwv-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="95CVfnCXo2DmVGU5_pwv-8" value="锁标志位01？" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-2" value="否" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="95CVfnCXo2DmVGU5_pwv-8" target="Y4Mr5a6Edq2xtOodHj_R-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="95CVfnCXo2DmVGU5_pwv-8" value="锁标志位01？&lt;br&gt;（偏向锁）" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="680" y="690" width="140" height="130" as="geometry" />
         </mxCell>
         <mxCell id="95CVfnCXo2DmVGU5_pwv-14" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="95CVfnCXo2DmVGU5_pwv-11" target="95CVfnCXo2DmVGU5_pwv-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-dIbOgSuruI6Xi6V4E4G-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="95CVfnCXo2DmVGU5_pwv-11" target="95CVfnCXo2DmVGU5_pwv-4">
+        <mxCell id="-dIbOgSuruI6Xi6V4E4G-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="95CVfnCXo2DmVGU5_pwv-11" target="95CVfnCXo2DmVGU5_pwv-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-dIbOgSuruI6Xi6V4E4G-2" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-dIbOgSuruI6Xi6V4E4G-1">
+        <mxCell id="-dIbOgSuruI6Xi6V4E4G-2" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-dIbOgSuruI6Xi6V4E4G-1" vertex="1" connectable="0">
           <mxGeometry x="0.0294" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -505,6 +508,47 @@
         </mxCell>
         <mxCell id="95CVfnCXo2DmVGU5_pwv-20" value="升级为轻量级锁，由持有锁的线程继续持有锁，当前线程自旋" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="130" y="1310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-5" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-1" target="Y4Mr5a6Edq2xtOodHj_R-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-1" target="Y4Mr5a6Edq2xtOodHj_R-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-1" value="锁标志位00？&lt;br&gt;（轻量级锁）" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="920" y="690" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-3" target="Y4Mr5a6Edq2xtOodHj_R-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-3" value="构造一个无锁状态的mark world复制到lock record中" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="935" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-7" value="成功" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-4" target="95CVfnCXo2DmVGU5_pwv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-9" value="失败" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-4" target="Y4Mr5a6Edq2xtOodHj_R-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-4" value="cas设置mark world中的记录指向lock record" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1134" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.933;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-8" target="95CVfnCXo2DmVGU5_pwv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-8" value="自旋，如果自旋超过一定次数，或锁竞争超过三个线程，升级为重量级锁" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="1350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Y4Mr5a6Edq2xtOodHj_R-11" target="95CVfnCXo2DmVGU5_pwv-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1261" y="1490" />
+              <mxPoint x="780" y="1490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y4Mr5a6Edq2xtOodHj_R-11" value="竞争monitor对象锁，成功：获取锁，失败：阻塞" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1201" y="725" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
