@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-17T08:07:49.441Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="sCHoi5TYIYSDHR_h0ZV7" version="21.3.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-05-17T08:19:17.222Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="MnW47HSJ-dNoTk_usuU1" version="21.3.0" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="容器启动">
     <mxGraphModel dx="2021" dy="1825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -247,7 +247,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="8nXCjmnCFBkcP1rOKNip" name="bean加载">
-    <mxGraphModel dx="1194" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2021" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -334,6 +334,15 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="780" as="sourcePoint" />
             <mxPoint x="440" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WwvwwiMtcGQ3vUle3iDC-2" value="1、先处理实现了XXAware接口的方法&lt;br&gt;2、执行BeanPostProcessor的前置处理&lt;br&gt;3、实现了InitializingBean或配置了init-method&lt;br&gt;4、执行BeanPostProcessor的后置处理&lt;br&gt;5、注册disposableBean用于销毁时的处理" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="900" width="440" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WwvwwiMtcGQ3vUle3iDC-3" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.306;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YZwvV6y8xXZDDhob5H9c-12" target="WwvwwiMtcGQ3vUle3iDC-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1010" as="sourcePoint" />
+            <mxPoint x="170" y="960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
