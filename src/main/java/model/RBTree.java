@@ -1,12 +1,47 @@
 package model;
 
+import model.RBTree.Node;
+import sun.jvm.hotspot.utilities.RBNode;
+
 /**
  * @Description: 红黑树
  * @Author xiaomingcong
  * @date 2021/6/21 10:13 下午
  * Version 1.0
  */
-public class RBTree extends BinaryTree{
+public class RBTree {
+    
+    Node root = null;
+    
+    enum Color{
+        RED,BLACK;
+    }
+
+
+    class Node{
+
+        Node(){
+
+        }
+
+        Node(int key){
+            this.key = key;
+        }
+
+        Node(int key, RBTree.Node left, RBTree.Node right){
+            this.key = key;
+            this.left = left;
+            this.right = right;
+        }
+
+        int key;
+        Node parent;
+        Node left;
+        Node right;
+        Color color = Color.RED;//节点颜色
+        int size;//以该节点为根节点的树所包含的节点的个数
+
+    }
 
 
 
@@ -19,7 +54,7 @@ public class RBTree extends BinaryTree{
        * @date 2021/6/22 3:59 上午
        * Version 1.0
     */
-    public void leftRotate(BinaryTree t,Node x){
+    public void leftRotate(RBTree t,Node x){
         Node y = null;
         y = x.right;
         x.right = y.left;
@@ -51,7 +86,7 @@ public class RBTree extends BinaryTree{
        * @date 2021/6/22 4:08 上午
        * Version 1.0
     */
-    public void rightRotate(BinaryTree t,Node y){
+    public void rightRotate(RBTree t,Node y){
         Node x = null;
         x = y.left;
         y.left = x.right;
@@ -74,8 +109,8 @@ public class RBTree extends BinaryTree{
         y.parent = x;
     }
 
-    @Override
-    public void insert(BinaryTree t, Node z) {
+
+    public void insert(RBTree t, Node z) {
         Node y = null;
         Node x = t.root;
         while (x != null){
@@ -116,7 +151,7 @@ public class RBTree extends BinaryTree{
        * @date 2021/6/22 5:10 上午
        * Version 1.0
     */
-    public void RBInsertFixUp(BinaryTree t,Node z){
+    public void RBInsertFixUp(RBTree t,Node z){
         Node y = null;
         while(z.parent.color == Color.RED){
             if(z.parent == z.parent.parent.left){
@@ -156,7 +191,7 @@ public class RBTree extends BinaryTree{
         t.root.color = Color.BLACK;
     }
 
-    public void rBTransplant(BinaryTree t, Node u, Node v){
+    public void rBTransplant(RBTree t, Node u, Node v){
         if(u.parent == null){
             t.root = v;
         }else if(u == u.parent.left){
@@ -167,7 +202,7 @@ public class RBTree extends BinaryTree{
         v.parent = u.parent;
     }
 
-    public void rBDelete(BinaryTree t, Node z){
+    public void rBDelete(RBTree t, Node z){
         Node y = z;
         Node x = null;
         Color yOriginalColor = y.color;
@@ -197,7 +232,7 @@ public class RBTree extends BinaryTree{
         }
     }
 
-    public void rBDeleteFixUp(BinaryTree t,Node x){
+    public void rBDeleteFixUp(RBTree t,Node x){
         Node w = null;
         while(x != t.root && x.color == Color.BLACK){
             if(x == x.parent.left) {
@@ -252,6 +287,13 @@ public class RBTree extends BinaryTree{
             }
         }
         x.color = Color.BLACK;
+    }
+
+    public Node treeMinimum(Node x){
+        while(x != null && x.left != null){
+            x = x.left;
+        }
+        return x;
     }
 
 

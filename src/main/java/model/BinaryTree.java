@@ -249,16 +249,16 @@ public class BinaryTree {
             this.key = key;
         }
 
-        Node(int key, RBTree.Node left, RBTree.Node right){
+        Node(int key, Node left, Node right){
             this.key = key;
             this.left = left;
             this.right = right;
         }
 
         int key;
-        RBTree.Node parent;
-        RBTree.Node left;
-        RBTree.Node right;
+        Node parent;
+        Node left;
+        Node right;
         Color color = Color.RED;//节点颜色
         int size;//以该节点为根节点的树所包含的节点的个数
 
