@@ -1,6 +1,6 @@
 package chapter08;
 
-import common.ArrayUtils;
+import util.ArrayUtils;
 
 /**
  * @Description: 计数排序

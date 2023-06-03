@@ -1,10 +1,8 @@
 package chapter04分治策略;
 
-import common.MatrixUtils;
-import common.NumberUtils;
+import util.MatrixUtils;
+import util.NumberUtils;
 import org.junit.Test;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * @Description: 矩阵乘法的Strassen算法

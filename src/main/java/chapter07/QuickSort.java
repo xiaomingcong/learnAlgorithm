@@ -1,6 +1,6 @@
 package chapter07;
 
-import common.ArrayUtils;
+import util.ArrayUtils;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;

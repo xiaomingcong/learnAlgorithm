@@ -1,6 +1,6 @@
 package chapter02;
 
-import common.ArrayUtils;
+import util.ArrayUtils;
 
 /**
    * @Description: 插入排序算法

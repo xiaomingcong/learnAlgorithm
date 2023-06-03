@@ -41,7 +41,7 @@ public class OrderStatisticTree extends RBTree{
        * @date 2021/6/23 4:25 上午
        * Version 1.0
     */
-    public int osRank(BinaryTree t,Node x){
+    public int osRank(RBTree t,Node x){
         if(x == null){
             return 0;
         }

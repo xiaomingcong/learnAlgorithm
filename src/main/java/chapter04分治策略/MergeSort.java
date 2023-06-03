@@ -1,6 +1,6 @@
 package chapter04分治策略;
 
-import common.ArrayUtils;
+import util.ArrayUtils;
 import org.junit.Test;
 
 import java.util.Arrays;

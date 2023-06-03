@@ -1,7 +1,6 @@
 package chapter06;
 
-import chapter04分治策略.MergeSort;
-import common.ArrayUtils;
+import util.ArrayUtils;
 
 /**
  * @Description: 堆排序算法

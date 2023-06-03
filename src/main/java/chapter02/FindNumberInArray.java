@@ -1,7 +1,7 @@
 package chapter02;
 
 
-import common.ArrayUtils;
+import util.ArrayUtils;
 
 /**
  * @Description: 查找元素是否存在数组中
